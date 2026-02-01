@@ -1,0 +1,50 @@
+# robots.txt pour www.fbrlabs.fr
+
+# Permettre à tous les robots d'explorer le site
+User-agent: *
+Allow: /
+
+# Pages principales - crawl prioritaire
+Allow: /index.html
+
+# Pages légales - crawl autorisé mais pas prioritaire
+Allow: /mentions-legales.html
+Allow: /politique-cookies.html
+Allow: /politique-confidentialite.html
+
+# Assets autorisés
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Bloquer les fichiers techniques
+Disallow: /assets/js/*.map
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Sitemap
+Sitemap: https://www.fbrlabs.fr/sitemap.xml
+
+# Règles spécifiques pour Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Règles spécifiques pour Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Bloquer les mauvais robots (spam, scraping)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

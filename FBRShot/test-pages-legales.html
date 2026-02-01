@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test des Pages Légales - FBR Shot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+
+    .section h2 {
+      color: #667eea;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .test-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .test-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .test-card h3 {
+      color: #333;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .test-card p {
+      color: #666;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .test-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .test-button:hover {
+      background: #5568d3;
+    }
+
+    .test-button.secondary {
+      background: #48bb78;
+    }
+
+    .test-button.secondary:hover {
+      background: #38a169;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+
+    .status.success {
+      background: #c6f6d5;
+      color: #22543d;
+    }
+
+    .status.warning {
+      background: #feebc8;
+      color: #744210;
+    }
+
+    .status.info {
+      background: #bee3f8;
+      color: #2c5282;
+    }
+
+    .checklist {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .checklist li {
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      background: white;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .checklist li:before {
+      content: '✓';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: #48bb78;
+      color: white;
+      border-radius: 50%;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .info-box {
+      background: #ebf8ff;
+      border: 1px solid #bee3f8;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .info-box strong {
+      color: #2c5282;
+    }
+
+    code {
+      background: #2d3748;
+      color: #68d391;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: 'Courier New', monospace;
+    }
+
+    .cookie-test-btn {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Test des Pages Légales FBR Shot</h1>
+    <p class="subtitle">Vérifiez que toutes les pages légales et le système de cookies fonctionnent correctement</p>
+
+    <!-- Section 1: Pages Légales -->
+    <div class="section">
+      <h2>📄 Pages Légales</h2>
+      <div class="test-grid">
+        <div class="test-card">
+          <h3>Mentions Légales <span class="status success">Créé</span></h3>
+          <p>Informations légales obligatoires sur l'entreprise FBR LABS, l'hébergeur OVHcloud et les responsabilités.</p>
+          <a href="mentions-legales.html" target="_blank" class="test-button">Tester la page →</a>
+        </div>
+
+        <div class="test-card">
+          <h3>Politique de Cookies <span class="status success">Créé</span></h3>
+          <p>Détails sur les cookies utilisés, leur finalité et comment les gérer. Conforme RGPD.</p>
+          <a href="politique-cookies.html" target="_blank" class="test-button">Tester la page →</a>
+        </div>
+
+        <div class="test-card">
+          <h3>Politique de Confidentialité <span class="status success">Créé</span></h3>
+          <p>Protection des données personnelles conforme au RGPD avec tous les droits utilisateurs.</p>
+          <a href="politique-confidentialite.html" target="_blank" class="test-button">Tester la page →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Système de Cookies -->
+    <div class="section">
+      <h2>🍪 Système de Gestion des Cookies</h2>
+      <div class="test-card">
+        <h3>Bannière de Consentement <span class="status info">À tester</span></h3>
+        <p>La bannière doit apparaître lors de la première visite. Elle permet d'accepter, refuser ou personnaliser les cookies.</p>
+
+        <div class="info-box">
+          <strong>Comment tester :</strong>
+          <ol style="margin-top: 0.5rem; margin-left: 1.5rem;">
+            <li>Ouvrez index.html en navigation privée</li>
+            <li>La bannière doit apparaître en bas de page</li>
+            <li>Testez les 3 boutons : Accepter / Refuser / Personnaliser</li>
+            <li>Vérifiez que votre choix est mémorisé (cookies)</li>
+          </ol>
+        </div>
+
+        <div class="cookie-test-btn">
+          <a href="index.html" target="_blank" class="test-button">Ouvrir le site →</a>
+          <button onclick="clearCookies()" class="test-button secondary">Effacer les cookies de test</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: SEO et Référencement -->
+    <div class="section">
+      <h2>🚀 SEO et Référencement</h2>
+      <div class="test-grid">
+        <div class="test-card">
+          <h3>Sitemap.xml <span class="status success">Créé</span></h3>
+          <p>Plan du site pour les moteurs de recherche (Google, Bing).</p>
+          <a href="sitemap.xml" target="_blank" class="test-button">Voir le sitemap →</a>
+        </div>
+
+        <div class="test-card">
+          <h3>Robots.txt <span class="status success">Créé</span></h3>
+          <p>Instructions pour les robots d'indexation.</p>
+          <a href="robots.txt" target="_blank" class="test-button">Voir robots.txt →</a>
+        </div>
+
+        <div class="test-card">
+          <h3>Google Analytics <span class="status warning">À configurer</span></h3>
+          <p>Configurez votre ID GA4 dans le fichier <code>cookies.js</code></p>
+          <div style="margin-top: 1rem;">
+            <strong>Fichier :</strong> <code>assets/js/cookies.js</code><br>
+            <strong>Ligne 13 :</strong> Remplacez <code>G-XXXXXXXXXX</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Checklist -->
+    <div class="section">
+      <h2>✅ Checklist de Vérification</h2>
+      <ul class="checklist">
+        <li>Toutes les pages légales sont accessibles</li>
+        <li>Les liens dans le footer pointent vers les bonnes pages</li>
+        <li>La bannière de cookies s'affiche correctement</li>
+        <li>Les préférences cookies sont sauvegardées</li>
+        <li>Le formulaire de contact a le lien vers la politique de confidentialité</li>
+        <li>Le sitemap.xml est accessible</li>
+        <li>Le robots.txt est accessible</li>
+        <li>Les pages sont responsive (mobile/tablet/desktop)</li>
+      </ul>
+    </div>
+
+    <!-- Section 5: Configuration Google Analytics -->
+    <div class="section">
+      <h2>⚙️ Configuration Requise</h2>
+      <div class="test-card">
+        <h3>Google Analytics 4 <span class="status warning">Action requise</span></h3>
+        <p><strong>Étapes :</strong></p>
+        <ol style="margin-left: 1.5rem; margin-top: 0.5rem; line-height: 1.8;">
+          <li>Créez un compte Google Analytics sur <a href="https://analytics.google.com" target="_blank" style="color: #667eea;">analytics.google.com</a></li>
+          <li>Créez une propriété GA4</li>
+          <li>Récupérez votre Measurement ID (format : G-XXXXXXXXXX)</li>
+          <li>Ouvrez le fichier <code>assets/js/cookies.js</code></li>
+          <li>Ligne 13, remplacez <code>GA_ID: 'G-XXXXXXXXXX'</code> par votre ID</li>
+          <li>Sauvegardez et testez</li>
+        </ol>
+
+        <div class="info-box" style="margin-top: 1rem;">
+          <strong>📖 Consultez le fichier PAGES-LEGALES-README.md pour plus de détails</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6: Support -->
+    <div class="section">
+      <h2>📚 Documentation</h2>
+      <div class="test-grid">
+        <div class="test-card">
+          <h3>README Principal</h3>
+          <p>Guide complet d'installation et de configuration des pages légales et cookies.</p>
+          <a href="PAGES-LEGALES-README.md" class="test-button">Ouvrir le README</a>
+        </div>
+
+        <div class="test-card">
+          <h3>Snippets SEO</h3>
+          <p>Code supplémentaire pour améliorer le référencement (GTM, pixels, schemas).</p>
+          <a href="SEO-SNIPPETS.md" class="test-button">Voir les snippets</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e2e8f0;">
+      <p style="color: #666;">
+        <strong>FBR Shot</strong> - Pages légales créées et configurées<br>
+        Février 2026
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function clearCookies() {
+      // Clear all FBR cookies
+      document.cookie = 'fbr_cookie_consent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      document.cookie = 'fbr_cookie_consent_date=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      document.cookie = 'fbr_session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+
+      // Clear Google Analytics cookies
+      document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      document.cookie = '_gat=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+
+      alert('✅ Cookies de test effacés ! Ouvrez maintenant index.html en navigation privée pour voir la bannière.');
+    }
+  </script>
+</body>
+</html>

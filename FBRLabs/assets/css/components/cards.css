@@ -1,0 +1,283 @@
+/* ========================================
+   Cards - FBR Shot
+   ======================================== */
+
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Card Header */
+.card-header {
+  padding: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+/* Card Body */
+.card-body {
+  padding: var(--spacing-xl);
+  flex: 1;
+}
+
+/* Card Footer */
+.card-footer {
+  padding: var(--spacing-xl);
+  border-top: 1px solid var(--color-gray-200);
+  background: var(--color-gray-100);
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-gray-200);
+}
+
+.card-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.card:hover .card-image-wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .card-image {
+  transform: scale(1.05);
+  transition: transform var(--transition-slow);
+}
+
+/* Service Card */
+.service-card {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.service-card-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto var(--spacing-lg);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: var(--font-size-3xl);
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover .service-card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.service-card-title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.service-card-description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Pricing Card */
+.pricing-card {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.pricing-card.is-featured {
+  border: 2px solid var(--color-primary);
+  transform: scale(1.05);
+  padding-top: calc(var(--spacing-2xl) + 1.5rem);
+}
+
+.pricing-card.is-featured::before {
+  content: 'Populaire';
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.375rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.pricing-card-title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.pricing-card-price {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.pricing-card-price-currency {
+  font-size: var(--font-size-2xl);
+}
+
+.pricing-card-duration {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.pricing-card-features {
+  list-style: none;
+  margin-bottom: var(--spacing-xl);
+  text-align: left;
+}
+
+.pricing-card-feature {
+  padding: var(--spacing-sm) 0;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+
+.pricing-card-feature::before {
+  content: '✓';
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  padding: var(--spacing-2xl);
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-card-quote {
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  line-height: var(--line-height-relaxed);
+}
+
+.testimonial-card-quote::before {
+  content: '"';
+  font-size: var(--font-size-5xl);
+  color: var(--color-primary);
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  opacity: 0.3;
+}
+
+.testimonial-card-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.testimonial-card-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.testimonial-card-name {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.testimonial-card-role {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.testimonial-card-rating {
+  color: var(--color-primary);
+  margin-top: var(--spacing-sm);
+}
+
+/* Blog Card */
+.blog-card {
+  background: var(--color-white);
+}
+
+.blog-card-category {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+}
+
+.blog-card-title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-tight);
+}
+
+.blog-card-excerpt {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .card-body,
+  .card-header,
+  .card-footer {
+    padding: var(--spacing-lg);
+  }
+
+  .pricing-card.is-featured {
+    transform: scale(1);
+  }
+}
