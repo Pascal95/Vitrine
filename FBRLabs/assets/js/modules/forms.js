@@ -10,8 +10,8 @@ export function initForms() {
     name: document.getElementById('name'),
     email: document.getElementById('email'),
     phone: document.getElementById('phone'),
-    eventType: document.getElementById('eventType'),
-    eventDate: document.getElementById('eventDate'),
+    projectType: document.getElementById('projectType'),
+    budget: document.getElementById('budget'),
     message: document.getElementById('message'),
     rgpd: document.getElementById('rgpd')
   };
@@ -35,9 +35,9 @@ export function initForms() {
       pattern: /^[0-9+\s()-]{10,}$/,
       message: 'Veuillez entrer un numéro de téléphone valide'
     },
-    eventType: {
+    projectType: {
       required: true,
-      message: 'Veuillez sélectionner un type d\'événement'
+      message: 'Veuillez sélectionner un type de projet'
     },
     message: {
       required: true,
@@ -146,7 +146,7 @@ export function initForms() {
   }
 
   // Submit form
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
 
     // Validate form
@@ -155,58 +155,15 @@ export function initForms() {
       return;
     }
 
-    // Get form data
-    const formData = {
-      name: formFields.name.value.trim(),
-      email: formFields.email.value.trim(),
-      phone: formFields.phone.value.trim(),
-      eventType: formFields.eventType.value,
-      eventDate: formFields.eventDate.value,
-      message: formFields.message.value.trim()
-    };
-
     // Show loading state
     const submitButton = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitButton.textContent;
     submitButton.disabled = true;
     submitButton.classList.add('is-loading');
     submitButton.textContent = 'Envoi en cours...';
 
-    try {
-      // Simulate API call (replace with actual API endpoint)
-      await new Promise(resolve => setTimeout(resolve, 1500));
-
-      // For demo purposes - In production, replace with actual form submission
-      // Example with Formspree:
-      // const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // });
-
-      console.log('Form data:', formData);
-
-      // Show success message
-      showFeedback('success', 'Votre demande a été envoyée avec succès ! Nous vous contacterons dans les plus brefs délais.');
-
-      // Reset form
-      contactForm.reset();
-      Object.values(formFields).forEach(field => {
-        field.classList.remove('is-valid', 'is-invalid');
-      });
-
-      // Scroll to feedback
-      formFeedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-    } catch (error) {
-      console.error('Form submission error:', error);
-      showFeedback('error', 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer ou nous contacter directement par email.');
-    } finally {
-      // Reset button
-      submitButton.disabled = false;
-      submitButton.classList.remove('is-loading');
-      submitButton.textContent = originalText;
-    }
+    // Submit the form to FormSubmit.co
+    // The form will redirect to the thank you page (_next parameter in the form)
+    contactForm.submit();
   }
 
   // Real-time validation on blur
