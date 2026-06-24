@@ -6,30 +6,44 @@ export function initPricing() {
   const pricingData = {
     particulier: [
       {
-        name: 'Classic',
-        price: 400,
-        duration: '6 heures',
+        name: 'Essentiel',
+        price: 300,
+        duration: '3 heures',
         features: [
           'Photobooth HD complet',
           'Interface tactile intuitive',
           'Impressions illimitées',
-          'Galerie digitale avec QR code',
-          'Livraison et installation',
-          'Support technique 24/7'
+          'Galerie digitale QR code',
+          'Livraison & installation',
+          'Support technique inclus'
+        ],
+        featured: false
+      },
+      {
+        name: 'Classic',
+        price: 500,
+        duration: '6 heures',
+        features: [
+          'Tout le pack Essentiel',
+          'Durée étendue (6h)',
+          'Accessoires thématiques',
+          'Personnalisation cadre',
+          'Album digital offert',
+          'Récupération flexible'
         ],
         featured: false
       },
       {
         name: 'Premium',
-        price: 700,
+        price: 800,
         duration: '12 heures',
         features: [
-          'Tous les avantages Classic',
-          'Durée étendue (12h)',
-          'Accessoires thématiques premium',
-          'Personnalisation avancée',
-          'Album photo digital offert',
-          'Récupération flexible'
+          'Tout le pack Classic',
+          'Couverture journée complète',
+          'Branding personnalisé inclus',
+          'Galerie privée sécurisée',
+          'Export haute résolution',
+          'Support prioritaire 24/7'
         ],
         featured: true
       }
@@ -37,45 +51,31 @@ export function initPricing() {
     entreprise: [
       {
         name: 'Corporate 1 jour',
-        price: 1440,
-        duration: '1 journée complète',
+        price: 1200,
+        duration: '1 journée',
         features: [
           'Matériel professionnel HD',
-          'Branding personnalisé inclus',
+          'Branding & logo personnalisé',
           'Galerie privée sécurisée',
           'Impressions illimitées',
           'Opérateur dédié sur place',
-          'Rapport d\'analytics post-événement'
+          'Rapport analytics post-event'
         ],
         featured: false
       },
       {
         name: 'Corporate 2 jours',
-        price: 2160,
+        price: 1900,
         duration: '2 journées',
         features: [
           'Tous les avantages Corporate',
-          'Durée étendue (2 jours)',
-          'Personnalisation multi-formats',
+          'Multi-formats personnalisés',
           'Export haute résolution',
-          'Support prioritaire',
+          'Support technique prioritaire',
+          'Debrief & rapport complet',
           'Solutions sur mesure'
         ],
         featured: true
-      },
-      {
-        name: 'Business',
-        price: 700,
-        duration: 'Par mois',
-        features: [
-          'Accès mensuel au photobooth',
-          'Idéal pour agences & event planners',
-          'Maintenance incluse',
-          'Formation utilisateur',
-          'Support technique dédié',
-          'Tarifs dégressifs pluriannuels'
-        ],
-        featured: false
       }
     ]
   };
@@ -85,15 +85,10 @@ export function initPricing() {
   const toggleEntreprise = document.getElementById('toggleEntreprise');
   const calculator = document.getElementById('pricingCalculator');
 
-  // Check if elements exist
-  if (!pricingGrid) {
-    console.error('❌ Pricing: pricingGrid element not found');
-    return;
-  }
+  if (!pricingGrid) return;
 
   let currentCategory = 'particulier';
 
-  // Render pricing cards
   function renderPricing(category) {
     const plans = pricingData[category];
 
@@ -105,9 +100,7 @@ export function initPricing() {
         </div>
         <p class="pricing-card-duration">${plan.duration}</p>
         <ul class="pricing-card-features">
-          ${plan.features.map(feature => `
-            <li class="pricing-card-feature">${feature}</li>
-          `).join('')}
+          ${plan.features.map(f => `<li class="pricing-card-feature">${f}</li>`).join('')}
         </ul>
         <a href="#contact" class="btn ${plan.featured ? 'btn-primary' : 'btn-outline'}" style="width: 100%;">
           Demander un devis
@@ -115,38 +108,33 @@ export function initPricing() {
       </div>
     `).join('');
 
-    // Trigger animation manually for dynamically generated cards
     requestAnimationFrame(() => {
-      const cards = pricingGrid.querySelectorAll('.pricing-card');
-      cards.forEach((card, index) => {
+      pricingGrid.querySelectorAll('.pricing-card').forEach((card, i) => {
         setTimeout(() => {
           card.style.opacity = '1';
           card.style.transform = 'translateY(0)';
-        }, index * 100);
+        }, i * 100);
       });
     });
   }
 
-  // Toggle between categories
   function toggleCategory(category) {
     currentCategory = category;
     renderPricing(category);
 
-    // Update toggle buttons
     if (category === 'particulier') {
-      toggleParticulier.classList.add('is-active', 'btn-primary');
+      toggleParticulier.classList.add('is-active');
       toggleParticulier.classList.remove('btn-ghost');
-      toggleEntreprise.classList.remove('is-active', 'btn-primary');
+      toggleEntreprise.classList.remove('is-active');
       toggleEntreprise.classList.add('btn-ghost');
     } else {
-      toggleEntreprise.classList.add('is-active', 'btn-primary');
+      toggleEntreprise.classList.add('is-active');
       toggleEntreprise.classList.remove('btn-ghost');
-      toggleParticulier.classList.remove('is-active', 'btn-primary');
+      toggleParticulier.classList.remove('is-active');
       toggleParticulier.classList.add('btn-ghost');
     }
   }
 
-  // Pricing calculator
   function initCalculator() {
     if (!calculator) return;
 
@@ -156,58 +144,34 @@ export function initPricing() {
 
     function calculateTotal() {
       let total = parseInt(baseFormula.value);
-
-      optionCheckboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-          total += parseInt(checkbox.value);
-        }
+      optionCheckboxes.forEach(cb => {
+        if (cb.checked) total += parseInt(cb.value);
       });
-
-      // Animate the price change
       animatePrice(totalPriceElement, total);
     }
 
-    function animatePrice(element, newPrice) {
-      const currentPrice = parseInt(element.textContent.replace('€', '')) || 0;
-      const increment = (newPrice - currentPrice) / 20;
-      let current = currentPrice;
-      let counter = 0;
-
-      const animate = () => {
-        current += increment;
-        counter++;
-
-        if (counter < 20) {
-          element.textContent = Math.round(current) + '€';
-          requestAnimationFrame(animate);
-        } else {
-          element.textContent = newPrice + '€';
-        }
+    function animatePrice(el, newPrice) {
+      const current = parseInt(el.textContent.replace('€', '')) || 0;
+      const increment = (newPrice - current) / 20;
+      let val = current;
+      let n = 0;
+      const go = () => {
+        val += increment;
+        n++;
+        if (n < 20) { el.textContent = Math.round(val) + '€'; requestAnimationFrame(go); }
+        else el.textContent = newPrice + '€';
       };
-
-      animate();
+      go();
     }
 
-    // Event listeners
     baseFormula.addEventListener('change', calculateTotal);
-    optionCheckboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', calculateTotal);
-    });
-
-    // Initialize with default value
+    optionCheckboxes.forEach(cb => cb.addEventListener('change', calculateTotal));
     calculateTotal();
   }
 
-  // Event listeners
-  if (toggleParticulier) {
-    toggleParticulier.addEventListener('click', () => toggleCategory('particulier'));
-  }
+  if (toggleParticulier) toggleParticulier.addEventListener('click', () => toggleCategory('particulier'));
+  if (toggleEntreprise) toggleEntreprise.addEventListener('click', () => toggleCategory('entreprise'));
 
-  if (toggleEntreprise) {
-    toggleEntreprise.addEventListener('click', () => toggleCategory('entreprise'));
-  }
-
-  // Initialize
   renderPricing(currentCategory);
   initCalculator();
 }

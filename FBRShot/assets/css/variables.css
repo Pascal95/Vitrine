@@ -1,48 +1,53 @@
 /* ========================================
-   CSS Variables - FBR Shot
+   CSS Variables - FBR Shot — Dark Luxury
    ======================================== */
 
 :root {
-  /* Colors - Primary */
-  --color-primary: #FFAB41;
-  --color-primary-dark: #FF9920;
-  --color-primary-light: #FFC670;
+  /* Colors - Gold accent */
+  --color-primary: #C9A96E;
+  --color-primary-dark: #A8844A;
+  --color-primary-light: #E2C48A;
+  --color-primary-glow: rgba(201, 169, 110, 0.15);
 
-  /* Colors - Secondary */
-  --color-secondary: #605BE5;
-  --color-secondary-alt: #6B6DFF;
-  --color-secondary-dark: #4A47B8;
+  /* Colors - Surfaces */
+  --color-bg: #080808;
+  --color-surface: #111111;
+  --color-surface-2: #1A1A1A;
+  --color-surface-3: #222222;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(201, 169, 110, 0.3);
 
-  /* Colors - Neutral */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  --color-gray-100: #F8F9FA;
-  --color-gray-200: #E9ECEF;
-  --color-gray-300: #DEE2E6;
-  --color-gray-400: #CED4DA;
-  --color-gray-500: #ADB5BD;
-  --color-gray-600: #777777;
-  --color-gray-700: #495057;
-  --color-gray-800: #343A40;
-  --color-gray-900: #212529;
-  --color-text-primary: #333333;
-  --color-text-secondary: #777777;
+  /* Colors - Neutral (kept for legacy compat) */
+  --color-white: #F5F5F0;
+  --color-black: #080808;
+  --color-gray-100: #1A1A1A;
+  --color-gray-200: #222222;
+  --color-gray-300: #2E2E2E;
+  --color-gray-400: #555550;
+  --color-gray-500: #888880;
+  --color-gray-600: #AAAAAA;
+  --color-gray-700: #CCCCCC;
+  --color-gray-800: #E0E0E0;
+  --color-gray-900: #F5F5F0;
+  --color-text-primary: #F5F5F0;
+  --color-text-secondary: #888880;
 
   /* Typography */
   --font-heading: 'Syne', sans-serif;
   --font-body: 'Montserrat', sans-serif;
   --font-button: 'Poppins', sans-serif;
 
-  --font-size-xs: 0.75rem;     /* 12px */
-  --font-size-sm: 0.875rem;    /* 14px */
-  --font-size-base: 1rem;      /* 16px */
-  --font-size-lg: 1.125rem;    /* 18px */
-  --font-size-xl: 1.25rem;     /* 20px */
-  --font-size-2xl: 1.5rem;     /* 24px */
-  --font-size-3xl: 1.875rem;   /* 30px */
-  --font-size-4xl: 2.25rem;    /* 36px */
-  --font-size-5xl: 3rem;       /* 48px */
-  --font-size-6xl: 3.75rem;    /* 60px */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+  --font-size-7xl: 5rem;
 
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -51,38 +56,38 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 
-  --line-height-tight: 1.2;
+  --line-height-tight: 1.1;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.75;
 
   /* Spacing */
-  --spacing-xs: 0.25rem;    /* 4px */
-  --spacing-sm: 0.5rem;     /* 8px */
-  --spacing-md: 1rem;       /* 16px */
-  --spacing-lg: 1.5rem;     /* 24px */
-  --spacing-xl: 2rem;       /* 32px */
-  --spacing-2xl: 3rem;      /* 48px */
-  --spacing-3xl: 4rem;      /* 64px */
-  --spacing-4xl: 6rem;      /* 96px */
-  --spacing-5xl: 8rem;      /* 128px */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+  --spacing-5xl: 8rem;
 
   /* Layout */
   --container-max-width: 1200px;
-  --container-padding: 1rem;
+  --container-padding: 1.5rem;
 
   /* Border Radius */
-  --radius-sm: 0.25rem;     /* 4px */
-  --radius-md: 0.5rem;      /* 8px */
-  --radius-lg: 1rem;        /* 16px */
-  --radius-xl: 1.5rem;      /* 24px */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 0 40px rgba(201, 169, 110, 0.2);
 
   /* Transitions */
   --transition-fast: 150ms ease-in-out;

@@ -5,81 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- SEO Meta Tags -->
-  <title>FBR Labs - Créateurs d'Expérience Digitale | Développement Web & Apps</title>
-  <meta name="description" content="FBR Labs - Développement web, applications mobiles, SEO, marketing digital. Transformez vos idées en solutions digitales performantes. Devis gratuit.">
+  <title>FBR Labs — Agence Digitale | Développement Web & Applications</title>
+  <meta name="description" content="FBR Labs — Développement web, applications mobiles, SEO, marketing digital. Transformez vos idées en solutions digitales performantes. Devis gratuit.">
   <meta name="keywords" content="développement web, création site internet, application mobile, SEO, référencement, marketing digital, agence web">
   <meta name="author" content="FBR Labs">
   <link rel="canonical" href="https://www.fbrlabs.fr/">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.fbrlabs.fr/">
-  <meta property="og:title" content="FBR Labs - Créateurs d'Expérience Digitale">
-  <meta property="og:description" content="Développement web, applications, SEO et marketing digital. Transformez vos idées en solutions digitales performantes.">
+  <meta property="og:title" content="FBR Labs — Agence Digitale">
+  <meta property="og:description" content="Développement web, applications, SEO et marketing digital. Du concept au lancement.">
   <meta property="og:image" content="https://www.fbrlabs.fr/assets/images/og-image.jpg">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://www.fbrlabs.fr/">
-  <meta name="twitter:title" content="FBR Labs - Créateurs d'Expérience Digitale">
+  <meta name="twitter:title" content="FBR Labs — Agence Digitale">
   <meta name="twitter:description" content="Développement web, applications, SEO et marketing digital.">
   <meta name="twitter:image" content="https://www.fbrlabs.fr/assets/images/og-image.jpg">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-  <!-- Stylesheet -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" as="style">
+
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/cookies.css">
   <link rel="stylesheet" href="assets/css/theme-fbrlabs.css">
 
-  <!-- Structured Data - Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "FBR Labs",
-    "description": "Créateurs d'expérience digitale - Développement web et applications",
+    "description": "Agence de développement web et digital",
     "url": "https://www.fbrlabs.fr",
-    "telephone": "+33-7-78-64-13-76",
+    "telephone": "+33778641376",
     "email": "contact@fbrlabs.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "61 rue de Lyon",
-      "addressLocality": "Paris",
-      "postalCode": "75012",
-      "addressCountry": "FR"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/company/fbrlabs"
-    ]
+    "address": { "@type": "PostalAddress", "streetAddress": "61 rue de Lyon", "addressLocality": "Paris", "postalCode": "75012", "addressCountry": "FR" }
   }
   </script>
 </head>
 <body>
 
-  <!-- Header Navigation -->
+  <!-- Header -->
   <header class="header" id="header">
     <div class="header-container">
-      <a href="#" class="header-logo" aria-label="FBR Labs - Accueil">
-        <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">FBR Labs</span>
+      <a href="#" class="header-logo" aria-label="FBR Labs — Accueil">
+        <span>FBR</span>&nbsp;<span style="color: var(--color-white); font-weight: 400;">Labs</span>
       </a>
 
       <nav class="nav" id="nav">
         <ul class="nav-list">
-          <li><a href="#accueil" class="nav-link is-active">Accueil</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#accueil"   class="nav-link is-active">Accueil</a></li>
+          <li><a href="#services"  class="nav-link">Services</a></li>
           <li><a href="#processus" class="nav-link">Processus</a></li>
           <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#tarifs"    class="nav-link">Tarifs</a></li>
+          <li><a href="#contact"   class="nav-link">Contact</a></li>
         </ul>
-        <a href="#contact" class="btn btn-primary nav-cta">Prendre rendez-vous</a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Démarrer un projet</a>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
@@ -89,409 +76,369 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+
+    <!-- ═══ HERO ═══ -->
     <section class="hero" id="accueil">
-      <div class="container">
-        <div class="hero-content scroll-reveal">
-          <h1 class="hero-title">
-            Créateurs d'<span class="hero-title-highlight">Expérience Digitale</span>
-          </h1>
-          <p class="hero-subtitle">
-            Nous fusionnons rigueur scientifique et agilité digitale pour transformer vos idées
-            en résultats mesurables. Du développement web au marketing digital.
-          </p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary btn-lg">Démarrer un projet</a>
-            <a href="#portfolio" class="btn btn-outline btn-lg">Voir nos réalisations</a>
+      <div class="hero-content scroll-reveal">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot"></span>
+          Agence digitale · Paris
+        </div>
+
+        <h1 class="hero-title">
+          Du concept au<br>
+          <span class="hero-title-highlight">produit digital</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Nous concevons et développons des sites web, applications et stratégies digitales qui
+          génèrent de vrais résultats. Rigueur, performance et design au service de vos ambitions.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact"   class="btn btn-primary btn-lg">Démarrer un projet</a>
+          <a href="#portfolio" class="btn btn-outline btn-lg">Voir nos réalisations</a>
+        </div>
+
+        <div class="hero-stats scroll-reveal">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="50">0</span>
+            <span class="hero-stat-label">Projets</span>
           </div>
-          <div class="hero-stats">
-            <div class="hero-stat scroll-reveal">
-              <span class="hero-stat-number" data-count="50">0</span>
-              <span class="hero-stat-label">Projets réalisés</span>
-            </div>
-            <div class="hero-stat scroll-reveal">
-              <span class="hero-stat-number" data-count="100">0</span>
-              <span class="hero-stat-label">% Satisfaction client</span>
-            </div>
-            <div class="hero-stat scroll-reveal">
-              <span class="hero-stat-number">24/7</span>
-              <span class="hero-stat-label">Support disponible</span>
-            </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="100">0</span>
+            <span class="hero-stat-label">% Satisfaits</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">24/7</span>
+            <span class="hero-stat-label">Support</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="a-propos">
+    <!-- ═══ SERVICES ═══ -->
+    <section class="section section-alt" id="services">
       <div class="container">
         <div class="section-header scroll-reveal">
-          <p class="section-subtitle">À propos</p>
-          <h2 class="section-title">Votre partenaire digital de confiance</h2>
-          <p class="section-description">
-            FBR Labs conçoit, teste et optimise des solutions digitales sur mesure.
-            De la création de sites web au marketing par email, nous transformons vos ambitions
-            en expériences digitales performantes et mesurables.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section" id="services" style="background-color: var(--color-gray-100);">
-      <div class="container">
-        <div class="section-header scroll-reveal">
-          <p class="section-subtitle">Nos Services</p>
-          <h2 class="section-title">Des solutions digitales complètes</h2>
+          <span class="section-subtitle">Nos expertises</span>
+          <h2 class="section-title">Des solutions digitales<br>à 360°</h2>
+          <div class="section-divider"></div>
         </div>
 
         <div class="grid grid-3">
+
           <div class="card service-card scroll-reveal">
-            <div class="service-card-icon">💻</div>
+            <div class="service-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
             <h3 class="service-card-title">Développement Web</h3>
-            <p class="service-card-description">
-              Sites et applications alliant esthétique et fonctionnalité. WordPress, Shopify, ou solutions sur mesure.
-            </p>
+            <p class="service-card-description">Sites et applications alliant esthétique et fonctionnalité. WordPress, Shopify ou solutions 100% sur mesure.</p>
           </div>
 
           <div class="card service-card scroll-reveal">
-            <div class="service-card-icon">📱</div>
+            <div class="service-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            </div>
             <h3 class="service-card-title">Applications Mobiles</h3>
-            <p class="service-card-description">
-              Applications iOS et Android performantes avec une expérience utilisateur optimale.
-            </p>
+            <p class="service-card-description">Applications iOS et Android performantes, pensées pour l'utilisateur et optimisées pour la conversion.</p>
           </div>
 
           <div class="card service-card scroll-reveal">
-            <div class="service-card-icon">🚀</div>
+            <div class="service-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
             <h3 class="service-card-title">Optimisation SEO</h3>
-            <p class="service-card-description">
-              Techniques avancées pour booster votre positionnement et assurer une présence dominante sur le web.
-            </p>
+            <p class="service-card-description">Techniques avancées pour dominer les SERPs et capter un trafic qualifié, durablement.</p>
           </div>
 
           <div class="card service-card scroll-reveal">
-            <div class="service-card-icon">📊</div>
+            <div class="service-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
             <h3 class="service-card-title">Analyse de Marché</h3>
-            <p class="service-card-description">
-              Identification SWOT et analyses approfondies pour des décisions éclairées et stratégiques.
-            </p>
+            <p class="service-card-description">Audit SWOT, veille concurrentielle et analyses approfondies pour des décisions stratégiques éclairées.</p>
           </div>
 
           <div class="card service-card scroll-reveal">
-            <div class="service-card-icon">📧</div>
+            <div class="service-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <h3 class="service-card-title">Email Marketing</h3>
-            <p class="service-card-description">
-              Création de contenus attractifs pour stimuler l'intérêt et l'engagement de votre audience.
-            </p>
+            <p class="service-card-description">Campagnes email ciblées pour nurturing, rétention et conversion de votre audience.</p>
           </div>
 
           <div class="card service-card scroll-reveal">
-            <div class="service-card-icon">📈</div>
+            <div class="service-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
             <h3 class="service-card-title">Marketing Digital</h3>
-            <p class="service-card-description">
-              Stratégies personnalisées pour accroître votre visibilité en ligne et votre engagement.
-            </p>
+            <p class="service-card-description">Google Ads, réseaux sociaux, stratégie de contenu — une présence digitale complète et mesurable.</p>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Process Section -->
+    <!-- ═══ PROCESSUS ═══ -->
     <section class="section" id="processus">
       <div class="container">
         <div class="section-header scroll-reveal">
-          <p class="section-subtitle">Notre Processus</p>
-          <h2 class="section-title">Une méthodologie éprouvée en 4 étapes</h2>
+          <span class="section-subtitle">Notre méthode</span>
+          <h2 class="section-title">Une méthodologie<br>éprouvée en 4 étapes</h2>
+          <div class="section-divider"></div>
         </div>
 
         <div class="grid grid-2">
+
           <div class="card scroll-reveal">
             <div class="card-body">
-              <h3 style="color: var(--color-primary); font-size: var(--font-size-3xl); margin-bottom: var(--spacing-md);">01</h3>
-              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md);">Analyse & Stratégie</h4>
-              <p style="color: var(--color-text-secondary);">Compréhension approfondie de vos besoins, objectifs et contraintes. Définition de la stratégie digitale optimale.</p>
+              <p class="step-number">01</p>
+              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--color-white);">Analyse & Stratégie</h4>
+              <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: 0;">Compréhension approfondie de vos besoins, objectifs et contraintes. Définition de la stratégie digitale optimale pour votre marché.</p>
             </div>
           </div>
 
           <div class="card scroll-reveal">
             <div class="card-body">
-              <h3 style="color: var(--color-primary); font-size: var(--font-size-3xl); margin-bottom: var(--spacing-md);">02</h3>
-              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md);">Design & Développement</h4>
-              <p style="color: var(--color-text-secondary);">Création de maquettes, développement de la solution avec les meilleures technologies du marché.</p>
+              <p class="step-number">02</p>
+              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--color-white);">Design & Développement</h4>
+              <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: 0;">Maquettes UI/UX soumises à validation, puis développement avec les meilleures technologies du marché.</p>
             </div>
           </div>
 
           <div class="card scroll-reveal">
             <div class="card-body">
-              <h3 style="color: var(--color-primary); font-size: var(--font-size-3xl); margin-bottom: var(--spacing-md);">03</h3>
-              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md);">Tests & Lancement</h4>
-              <p style="color: var(--color-text-secondary);">Tests rigoureux sur tous les appareils, corrections, optimisations et mise en ligne de votre projet.</p>
+              <p class="step-number">03</p>
+              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--color-white);">Tests & Lancement</h4>
+              <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: 0;">Tests multi-appareils rigoureux, corrections, optimisation des performances, puis mise en production.</p>
             </div>
           </div>
 
           <div class="card scroll-reveal">
             <div class="card-body">
-              <h3 style="color: var(--color-primary); font-size: var(--font-size-3xl); margin-bottom: var(--spacing-md);">04</h3>
-              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md);">Suivi & Amélioration Continue</h4>
-              <p style="color: var(--color-text-secondary);">Accompagnement pendant 3 mois, analyses de performance et optimisations continues.</p>
+              <p class="step-number">04</p>
+              <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--color-white);">Suivi & Amélioration</h4>
+              <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: 0;">Accompagnement 3 mois post-lancement. Analyses de performance, ajustements et optimisation continue.</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Technologies Section -->
-     <!--
-    <section class="section" style="background-color: var(--color-gray-100);">
+    <!-- ═══ PORTFOLIO ═══ -->
+    <section class="section section-alt" id="portfolio">
       <div class="container">
         <div class="section-header scroll-reveal">
-          <p class="section-subtitle">Technologies</p>
-          <h2 class="section-title">Notre Stack Technologique</h2>
-        </div>
-
-        <div class="grid grid-6" style="gap: var(--spacing-xl);">
-          <div class="scroll-reveal" style="text-align: center;">
-            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🛍️</div>
-            <p style="font-weight: var(--font-weight-semibold);">Shopify</p>
-          </div>
-          <div class="scroll-reveal" style="text-align: center;">
-            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">📝</div>
-            <p style="font-weight: var(--font-weight-semibold);">WordPress</p>
-          </div>
-          <div class="scroll-reveal" style="text-align: center;">
-            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🛒</div>
-            <p style="font-weight: var(--font-weight-semibold);">WooCommerce</p>
-          </div>
-          <div class="scroll-reveal" style="text-align: center;">
-            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">💻</div>
-            <p style="font-weight: var(--font-weight-semibold);">HTML/CSS/JS</p>
-          </div>
-          <div class="scroll-reveal" style="text-align: center;">
-            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">⚡</div>
-            <p style="font-weight: var(--font-weight-semibold);">Node.js</p>
-          </div>
-          <div class="scroll-reveal" style="text-align: center;">
-            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">⚛️</div>
-            <p style="font-weight: var(--font-weight-semibold);">React</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-    <!-- Portfolio Section -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-header scroll-reveal">
-          <p class="section-subtitle">Portfolio</p>
+          <span class="section-subtitle">Portfolio</span>
           <h2 class="section-title">Nos réalisations</h2>
+          <p class="section-description">Des projets concrets, des résultats mesurables.</p>
+          <div class="section-divider"></div>
         </div>
 
         <div class="grid grid-3">
+
           <div class="card blog-card scroll-reveal">
-            <div class="card-image-wrapper" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
-              <img src="./assets/images/snscreen.png" alt="Sn telecom">
+            <div class="card-image-wrapper">
+              <img src="./assets/images/snscreen.png" alt="SN Telecom" class="card-image">
             </div>
             <div class="card-body">
-              <span class="blog-card-category">Wordpress</span>
+              <span class="blog-card-category">WordPress</span>
               <h3 class="blog-card-title">SN Telecom</h3>
-              <p class="blog-card-excerpt">Un site repensé de A à Z pour sntelecom, avec une charte graphique créée sur mesure et une expérience web optimisée pour la lisibilité, l’impact et la conversion.</p>
+              <p class="blog-card-excerpt">Site repensé de A à Z — charte graphique sur mesure, expérience web optimisée pour la lisibilité, l'impact et la conversion.</p>
             </div>
           </div>
 
           <div class="card blog-card scroll-reveal">
-            <div class="card-image-wrapper" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); min-height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
-              <img src="./assets/images/fringalescreen.png" alt="Fringale">
+            <div class="card-image-wrapper">
+              <img src="./assets/images/fringalescreen.png" alt="Fringale" class="card-image">
             </div>
             <div class="card-body">
               <span class="blog-card-category">Shopify</span>
               <h3 class="blog-card-title">Fringale</h3>
-              <p class="blog-card-excerpt">Fringale est un site e-commerce Shopify dédié à une créatrice de vêtements, mettant en avant des collections mode originales à travers une expérience fluide, moderne et orientée conversion.</p>
+              <p class="blog-card-excerpt">E-commerce Shopify pour une créatrice de vêtements. Expérience fluide, moderne et orientée conversion.</p>
             </div>
           </div>
 
           <div class="card blog-card scroll-reveal">
-            <div class="card-image-wrapper" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); min-height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
-              <img src="./assets/images/beautyscreen.png" alt="Beauty Formation">
+            <div class="card-image-wrapper">
+              <img src="./assets/images/beautyscreen.png" alt="Beauty Formation" class="card-image">
             </div>
             <div class="card-body">
-              <span class="blog-card-category">Wordpress</span>
+              <span class="blog-card-category">SEO & Google Ads</span>
               <h3 class="blog-card-title">Beauty Formation</h3>
-              <p class="blog-card-excerpt">Intervention technique comprenant la résolution de bugs, l’optimisation SEO pour améliorer la visibilité en ligne, ainsi que la mise en place et l’optimisation de campagnes Google Ads afin de renforcer l’acquisition de leads.</p>
+              <p class="blog-card-excerpt">Optimisation SEO, résolution de bugs et mise en place de campagnes Google Ads pour l'acquisition de leads.</p>
             </div>
           </div>
 
           <div class="card blog-card scroll-reveal">
-            <div class="card-image-wrapper" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); min-height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
-              <img src="./assets/images/heygoscreen.png" alt="Heygo">
+            <div class="card-image-wrapper">
+              <img src="./assets/images/heygoscreen.png" alt="Heygo" class="card-image">
             </div>
             <div class="card-body">
-              <span class="blog-card-category">Wordpress + Webapp Nodejs Reactjs</span>
+              <span class="blog-card-category">WordPress + Node.js + React</span>
               <h3 class="blog-card-title">Heygo</h3>
-              <p class="blog-card-excerpt">Heygo est une plateforme complète de réservation de taxi, comprenant un site de réservation grand public ainsi qu’une web application dédiée aux taxis conventionnés, intégrant un système intelligent d’attribution des courses pour optimiser la gestion, la répartition et le suivi des trajets.</p>
+              <p class="blog-card-excerpt">Plateforme complète de réservation taxi — site grand public + web app opérateurs avec attribution intelligente des courses.</p>
             </div>
           </div>
 
           <div class="card blog-card scroll-reveal">
-            <div class="card-image-wrapper" style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); min-height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
-              <img src="./assets/images/fbrshotscreen.png" alt="FBR Shot">
+            <div class="card-image-wrapper">
+              <img src="./assets/images/fbrshotscreen.png" alt="FBR Shot" class="card-image">
             </div>
             <div class="card-body">
               <span class="blog-card-category">Site vitrine</span>
               <h3 class="blog-card-title">FBR Shot</h3>
-              <p class="blog-card-excerpt">FBR Shot est une solution de photobooth clé en main, alliant design moderne, technologie sur mesure et expérience utilisateur fluide, pensée pour animer événements privés et professionnels avec des photos de qualité et une interface intuitive.</p>
+              <p class="blog-card-excerpt">Solution photobooth clé en main — design moderne, technologie sur mesure et interface intuitive pour événements privés et pro.</p>
             </div>
           </div>
 
-          <div class="card blog-card scroll-reveal" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="window.location.href='#contact'">
+          <div class="card scroll-reveal" style="cursor: pointer; display: flex; align-items: center; justify-content: center; min-height: 280px; background: var(--color-surface-2); border-style: dashed;" onclick="window.location.href='#contact'">
             <div style="text-align: center; padding: var(--spacing-xl);">
-              <p style="font-size: var(--font-size-3xl); margin-bottom: var(--spacing-md);">+</p>
-              <p style="font-weight: var(--font-weight-bold); font-size: var(--font-size-lg);">Votre projet</p>
-              <p style="font-size: var(--font-size-sm); opacity: 0.9; margin-top: var(--spacing-sm);">Discutons-en ensemble</p>
+              <div style="width: 3rem; height: 3rem; border: 1px solid var(--color-border-hover); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md); color: var(--color-primary); font-size: 1.5rem; font-weight: 300;">+</div>
+              <p style="font-weight: var(--font-weight-semibold); font-size: var(--font-size-base); color: var(--color-white); margin-bottom: var(--spacing-xs);">Votre projet</p>
+              <p style="font-size: var(--font-size-xs); color: var(--color-text-secondary); margin-bottom: 0;">Discutons-en ensemble</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="section" id="tarifs" style="background-color: var(--color-gray-100);">
+    <!-- ═══ TARIFS ═══ -->
+    <section class="section" id="tarifs">
       <div class="container">
         <div class="section-header scroll-reveal">
-          <p class="section-subtitle">Nos Tarifs</p>
-          <h2 class="section-title">Des forfaits adaptés à vos besoins</h2>
+          <span class="section-subtitle">Nos tarifs</span>
+          <h2 class="section-title">Forfaits clairs,<br>sans surprise</h2>
+          <p class="section-description">Chaque forfait inclut hébergement 1 an, SSL, pages légales RGPD et formation.</p>
+          <div class="section-divider"></div>
         </div>
 
         <div class="grid grid-3">
-          <div class="card scroll-reveal">
-            <div class="card-body">
-              <h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-md); color: var(--color-primary);">Site Vitrine</h3>
-              <p style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-sm);">À partir de 800€</p>
-              <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">Site professionnel 5-7 pages</p>
-              <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-xl);">
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Design responsive
+
+          <div class="card scroll-reveal" style="padding: 0;">
+            <div class="card-body" style="display: flex; flex-direction: column;">
+              <p style="font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-secondary); margin-bottom: var(--spacing-sm); font-weight: var(--font-weight-semibold);">Site Vitrine</p>
+              <p style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: var(--font-weight-bold); color: var(--color-white); font-family: var(--font-heading); line-height: 1; margin-bottom: var(--spacing-xs);">800<span style="font-size: var(--font-size-xl); color: var(--color-primary);">€</span></p>
+              <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xl);">Site professionnel 5–7 pages</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-xl); flex: 1; display: flex; flex-direction: column; gap: 0;">
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Design responsive sur mesure
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> SEO optimisé
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> SEO on-page optimisé
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Formulaire de contact
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Formulaire de contact
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Google Analytics
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Google Analytics intégré
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Support 3 mois
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Support 3 mois inclus
                 </li>
               </ul>
               <a href="#contact" class="btn btn-outline" style="width: 100%;">Demander un devis</a>
             </div>
           </div>
 
-          <div class="card scroll-reveal" style="border: 2px solid var(--color-primary); position: relative;">
-            <div style="position: absolute;  left: 50%; transform: translateX(-50%); background: var(--color-primary); color: white; padding: 0.5rem 1rem; border-radius: var(--radius-md); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold);">POPULAIRE</div>
-            <div class="card-body">
-              <h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-md); color: var(--color-primary);">E-commerce</h3>
-              <p style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-sm);">À partir de 2000€</p>
-              <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">Boutique en ligne complète</p>
-              <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-xl);">
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Design sur mesure
+          <div class="card scroll-reveal" style="padding: 0; border-color: var(--color-primary); box-shadow: var(--shadow-blue); position: relative;">
+            <div style="position: absolute; top: -1px; left: var(--spacing-xl); background: var(--color-primary); color: #fff; padding: 0.3rem 1rem; border-radius: 0 0 var(--radius-sm) var(--radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.08em; text-transform: uppercase;">Populaire</div>
+            <div class="card-body" style="display: flex; flex-direction: column; padding-top: calc(var(--spacing-xl) + 1.5rem);">
+              <p style="font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-secondary); margin-bottom: var(--spacing-sm); font-weight: var(--font-weight-semibold);">E-commerce</p>
+              <p style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: var(--font-weight-bold); color: var(--color-white); font-family: var(--font-heading); line-height: 1; margin-bottom: var(--spacing-xs);">2 000<span style="font-size: var(--font-size-xl); color: var(--color-primary);">€</span></p>
+              <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xl);">Boutique en ligne complète</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-xl); flex: 1; display: flex; flex-direction: column; gap: 0;">
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Design sur mesure
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Paiement sécurisé
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Paiement sécurisé (Stripe / PayPal)
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Gestion produits
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Gestion produits & stock
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> SEO avancé
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> SEO e-commerce avancé
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Support 6 mois
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Support 6 mois inclus
                 </li>
               </ul>
               <a href="#contact" class="btn btn-primary" style="width: 100%;">Demander un devis</a>
             </div>
           </div>
 
-          <div class="card scroll-reveal">
-            <div class="card-body">
-              <h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-md); color: var(--color-primary);">Application</h3>
-              <p style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-sm);">Sur devis</p>
-              <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">Mobile iOS/Android ou Web App</p>
-              <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-xl);">
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Multi-plateformes
+          <div class="card scroll-reveal" style="padding: 0;">
+            <div class="card-body" style="display: flex; flex-direction: column;">
+              <p style="font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-secondary); margin-bottom: var(--spacing-sm); font-weight: var(--font-weight-semibold);">Application</p>
+              <p style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: var(--font-weight-bold); color: var(--color-white); font-family: var(--font-heading); line-height: 1; margin-bottom: var(--spacing-xs);">Sur devis</p>
+              <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xl);">Mobile iOS/Android ou Web App</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-xl); flex: 1; display: flex; flex-direction: column; gap: 0;">
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Multi-plateformes (iOS & Android)
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> UI/UX design
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> UI/UX design complet
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Backend API
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Backend API sur mesure
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Base de données
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Base de données scalable
                 </li>
-                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm);">
-                  <span style="color: var(--color-primary);">✓</span> Support 12 mois
+                <li style="padding: var(--spacing-sm) 0; display: flex; align-items: center; gap: var(--spacing-sm); font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                  <span style="color: var(--color-primary); font-size: var(--font-size-xs);">✓</span> Support 12 mois inclus
                 </li>
               </ul>
               <a href="#contact" class="btn btn-outline" style="width: 100%;">Nous contacter</a>
             </div>
           </div>
-        </div>
 
-        <div class="text-center mt-2xl scroll-reveal">
-          <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">
-            Tous nos forfaits incluent : hébergement pendant 1 an, certificat SSL, pages légales RGPD, et formation à l'administration.
-          </p>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
+    <!-- ═══ CONTACT ═══ -->
+    <section class="section section-alt" id="contact">
       <div class="container">
         <div class="section-header scroll-reveal">
-          <p class="section-subtitle">Contact</p>
-          <h2 class="section-title">Discutons de votre projet</h2>
+          <span class="section-subtitle">Contact</span>
+          <h2 class="section-title">Discutons de<br>votre projet</h2>
+          <p class="section-description">Réponse sous 24h. Premier échange sans engagement.</p>
+          <div class="section-divider"></div>
         </div>
 
         <div class="grid grid-2">
+
           <div class="scroll-reveal">
             <div class="card">
               <div class="card-body">
                 <form id="contactForm" action="https://formsubmit.co/contact@fbrlabs.fr" method="POST">
-
-                  <!-- Configuration FormSubmit -->
-                  <input type="hidden" name="_subject" value="Nouvelle demande de projet - FBR Labs">
+                  <input type="hidden" name="_subject" value="Nouvelle demande de projet — FBR Labs">
                   <input type="hidden" name="_captcha" value="false">
                   <input type="hidden" name="_template" value="box">
                   <input type="hidden" name="_next" value="https://www.fbrlabs.fr/merci.html">
-
-                  <!-- Honeypot anti-spam -->
                   <input type="text" name="_honey" style="display:none">
 
                   <div class="form-row">
                     <div class="form-group">
                       <label for="name" class="form-label form-label-required">Nom complet</label>
-                      <input type="text" id="name" name="name" class="form-input" required>
+                      <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
                     </div>
-
                     <div class="form-group">
                       <label for="email" class="form-label form-label-required">Email</label>
-                      <input type="email" id="email" name="email" class="form-input" required>
+                      <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.fr" required>
                     </div>
                   </div>
 
                   <div class="form-row">
                     <div class="form-group">
                       <label for="phone" class="form-label">Téléphone</label>
-                      <input type="tel" id="phone" name="phone" class="form-input">
+                      <input type="tel" id="phone" name="phone" class="form-input" placeholder="06 XX XX XX XX">
                     </div>
-
                     <div class="form-group">
                       <label for="projectType" class="form-label form-label-required">Type de projet</label>
                       <select id="projectType" name="projectType" class="form-select" required>
@@ -499,7 +446,7 @@
                         <option value="Site vitrine">Site vitrine</option>
                         <option value="E-commerce">E-commerce</option>
                         <option value="Application mobile">Application mobile</option>
-                        <option value="SEO/Marketing">SEO/Marketing</option>
+                        <option value="SEO/Marketing">SEO / Marketing</option>
                         <option value="Autre">Autre</option>
                       </select>
                     </div>
@@ -509,16 +456,16 @@
                     <label for="budget" class="form-label">Budget estimé</label>
                     <select id="budget" name="budget" class="form-select">
                       <option value="">Sélectionnez...</option>
-                      <option value="< 1000€">< 1000€</option>
-                      <option value="1000€ - 3000€">1000€ - 3000€</option>
-                      <option value="3000€ - 5000€">3000€ - 5000€</option>
-                      <option value="> 5000€">> 5000€</option>
+                      <option value="< 1000€">Moins de 1 000€</option>
+                      <option value="1000-3000€">1 000€ – 3 000€</option>
+                      <option value="3000-5000€">3 000€ – 5 000€</option>
+                      <option value="> 5000€">Plus de 5 000€</option>
                     </select>
                   </div>
 
                   <div class="form-group">
                     <label for="message" class="form-label form-label-required">Description du projet</label>
-                    <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez votre projet, vos objectifs, vos contraintes..." required></textarea>
                   </div>
 
                   <div class="form-group">
@@ -531,62 +478,72 @@
                   </div>
 
                   <div class="form-actions">
-                    <button type="submit" class="btn btn-primary btn-lg">Envoyer la demande</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Envoyer ma demande</button>
                   </div>
 
-                  <div id="formFeedback" style="display: none; margin-top: var(--spacing-lg);"></div>
+                  <div id="formFeedback" style="display:none; margin-top: var(--spacing-lg);"></div>
                 </form>
               </div>
             </div>
           </div>
 
-          <div class="scroll-reveal">
-            <div class="card mb-lg">
-              <div class="card-body">
-                <h3 style="margin-bottom: var(--spacing-lg);">Informations de contact</h3>
-                <div style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
-                  <div style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
-                    <span style="font-size: var(--font-size-xl);">📧</span>
-                    <div>
-                      <p style="font-weight: var(--font-weight-semibold); margin-bottom: var(--spacing-xs);">Email</p>
-                      <a href="mailto:contact@fbrlabs.fr" style="color: var(--color-primary);">contact@fbrlabs.fr</a>
-                    </div>
-                  </div>
+          <div class="scroll-reveal" style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
 
-                  <div style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
-                    <span style="font-size: var(--font-size-xl);">📱</span>
-                    <div>
-                      <p style="font-weight: var(--font-weight-semibold); margin-bottom: var(--spacing-xs);">Téléphone</p>
-                      <a href="tel:+33778641376" style="color: var(--color-primary);">+33 7 78 64 13 76</a>
-                    </div>
-                  </div>
-
-                  <div style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
-                    <span style="font-size: var(--font-size-xl);">📍</span>
-                    <div>
-                      <p style="font-weight: var(--font-weight-semibold); margin-bottom: var(--spacing-xs);">Adresse</p>
-                      <p style="color: var(--color-text-secondary);">61 rue de Lyon<br>75012 Paris, France</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--
             <div class="card">
               <div class="card-body">
-                <h3 style="margin-bottom: var(--spacing-lg);">Suivez-nous</h3>
-                <div style="display: flex; gap: var(--spacing-md);">
-                  <a href="#" class="footer-social-link" aria-label="LinkedIn">L</a>
-                  <a href="#" class="footer-social-link" aria-label="GitHub">G</a>
-                  <a href="#" class="footer-social-link" aria-label="Twitter">T</a>
+                <h3 style="font-family: var(--font-heading); margin-bottom: var(--spacing-xl); color: var(--color-white);">Nous contacter</h3>
+                <div style="display: flex; flex-direction: column; gap: var(--spacing-xl);">
+                  <div style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                    <div style="width: 2.5rem; height: 2.5rem; border: 1px solid var(--color-border-hover); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-primary);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                      <p style="font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary); margin-bottom: var(--spacing-xs);">Email</p>
+                      <a href="mailto:contact@fbrlabs.fr" style="color: var(--color-primary); font-size: var(--font-size-sm);">contact@fbrlabs.fr</a>
+                    </div>
+                  </div>
+                  <div style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                    <div style="width: 2.5rem; height: 2.5rem; border: 1px solid var(--color-border-hover); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-primary);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.77-.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                      <p style="font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary); margin-bottom: var(--spacing-xs);">Téléphone</p>
+                      <a href="tel:+33778641376" style="color: var(--color-primary); font-size: var(--font-size-sm);">+33 7 78 64 13 76</a>
+                    </div>
+                  </div>
+                  <div style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                    <div style="width: 2.5rem; height: 2.5rem; border: 1px solid var(--color-border-hover); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-primary);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                      <p style="font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary); margin-bottom: var(--spacing-xs);">Adresse</p>
+                      <p style="color: var(--color-gray-600); font-size: var(--font-size-sm); margin-bottom: 0;">61 rue de Lyon<br>75012 Paris, France</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            -->
+
+            <!-- Stack tech -->
+            <div style="padding: var(--spacing-xl); background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-lg);">
+              <p style="font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-secondary); margin-bottom: var(--spacing-lg); font-weight: var(--font-weight-semibold);">Notre stack technique</p>
+              <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-sm);">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">Shopify</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">WooCommerce</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Google Ads</span>
+                <span class="tech-tag">SEO</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
@@ -594,19 +551,25 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">FBR Labs</span>
-          <p class="footer-description">
-            Créateurs d'expérience digitale. Du développement web au marketing digital.
-          </p>
+          <div style="font-family: var(--font-heading); font-size: var(--font-size-xl); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-md); color: var(--color-white); letter-spacing: -0.02em;">
+            <span style="color: var(--color-primary);">FBR</span> Labs
+          </div>
+          <p class="footer-description">Agence digitale parisienne. Du développement web au marketing digital — des solutions qui génèrent de vrais résultats.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/fbrlabs" class="footer-social-link" aria-label="LinkedIn">Li</a>
+            <a href="#" class="footer-social-link" aria-label="GitHub">Gh</a>
+            <a href="#" class="footer-social-link" aria-label="Twitter / X">X</a>
+          </div>
         </div>
 
         <div>
           <h4 class="footer-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="#accueil" class="footer-link">Accueil</a></li>
-            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#accueil"   class="footer-link">Accueil</a></li>
+            <li><a href="#services"  class="footer-link">Services</a></li>
             <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
-            <li><a href="#tarifs" class="footer-link">Tarifs</a></li>
+            <li><a href="#tarifs"    class="footer-link">Tarifs</a></li>
+            <li><a href="#contact"   class="footer-link">Contact</a></li>
           </ul>
         </div>
 
@@ -623,8 +586,8 @@
         <div>
           <h4 class="footer-title">Légal</h4>
           <ul class="footer-links">
-            <li><a href="mentions-legales.html" class="footer-link">Mentions légales</a></li>
-            <li><a href="politique-cookies.html" class="footer-link">Cookies</a></li>
+            <li><a href="mentions-legales.html"          class="footer-link">Mentions légales</a></li>
+            <li><a href="politique-cookies.html"         class="footer-link">Cookies</a></li>
             <li><a href="politique-confidentialite.html" class="footer-link">Confidentialité</a></li>
           </ul>
         </div>
@@ -633,18 +596,16 @@
       <div class="footer-bottom">
         <p>&copy; 2026 FBR Labs. Tous droits réservés.</p>
         <div class="footer-bottom-links">
-          <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
-          <a href="politique-cookies.html" class="footer-link">Cookies</a>
+          <a href="mentions-legales.html"          class="footer-link">Mentions légales</a>
+          <a href="politique-cookies.html"         class="footer-link">Cookies</a>
           <a href="politique-confidentialite.html" class="footer-link">Confidentialité</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
   <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
 
-  <!-- JavaScript -->
   <script src="assets/js/cookies.js" type="module"></script>
   <script src="assets/js/main.js" type="module"></script>
 </body>

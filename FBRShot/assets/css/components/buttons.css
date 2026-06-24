@@ -1,13 +1,13 @@
 /* ========================================
-   Buttons - FBR Shot
+   Buttons - FBR Shot Dark Luxury
    ======================================== */
 
 .btn {
   font-family: var(--font-button);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   padding: 0.875rem 2rem;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-full);
   text-align: center;
   display: inline-flex;
   align-items: center;
@@ -18,88 +18,79 @@
   border: none;
   text-decoration: none;
   white-space: nowrap;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .btn:focus-visible {
   outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
+  outline-offset: 3px;
 }
 
-/* Primary Button */
+/* Primary — gold filled */
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  color: var(--color-white);
-  box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 50%, var(--color-primary-dark) 100%);
+  color: #0A0A0A;
+  box-shadow: 0 4px 24px rgba(201, 169, 110, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  box-shadow: 0 8px 32px rgba(201, 169, 110, 0.5);
+  color: #0A0A0A;
 }
 
 .btn-primary:active {
   transform: translateY(0);
-  box-shadow: var(--shadow-sm);
 }
 
-/* Secondary Button */
-.btn-secondary {
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-alt) 100%);
-  color: var(--color-white);
-  box-shadow: var(--shadow-md);
-}
-
-.btn-secondary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-secondary) 100%);
-}
-
-.btn-secondary:active {
-  transform: translateY(0);
-  box-shadow: var(--shadow-sm);
-}
-
-/* Outline Button */
+/* Outline — ghost gold */
 .btn-outline {
   background: transparent;
   color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-  box-shadow: none;
+  border: 1px solid var(--color-primary);
 }
 
 .btn-outline:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-primary-glow);
+  color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
-/* Ghost Button */
+/* Ghost */
 .btn-ghost {
   background: transparent;
-  color: var(--color-text-primary);
-  box-shadow: none;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
 }
 
 .btn-ghost:hover {
-  background: var(--color-gray-100);
-  transform: translateY(-2px);
+  background: var(--color-surface-2);
+  color: var(--color-white);
+  border-color: var(--color-border-hover);
+}
+
+/* Active state for toggle */
+.btn-ghost.is-active,
+.btn.is-active {
+  background: var(--color-primary);
+  color: #0A0A0A;
+  border-color: var(--color-primary);
 }
 
 /* Button Sizes */
 .btn-sm {
-  padding: 0.625rem 1.25rem;
-  font-size: var(--font-size-sm);
+  padding: 0.5rem 1.25rem;
+  font-size: var(--font-size-xs);
 }
 
 .btn-lg {
-  padding: 1.125rem 2.5rem;
-  font-size: var(--font-size-lg);
+  padding: 1.125rem 2.75rem;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.1em;
 }
 
-/* Button with Icon */
 .btn-icon {
   padding: 0.875rem;
   width: 3rem;
@@ -107,7 +98,6 @@
   border-radius: var(--radius-full);
 }
 
-/* Loading State */
 .btn.is-loading {
   pointer-events: none;
   opacity: 0.6;
@@ -126,28 +116,22 @@
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+  to { transform: rotate(360deg); }
 }
 
-/* Disabled State */
 .btn:disabled,
 .btn.is-disabled {
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .btn {
     padding: 0.75rem 1.5rem;
-    font-size: var(--font-size-sm);
   }
-
   .btn-lg {
     padding: 1rem 2rem;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
   }
 }

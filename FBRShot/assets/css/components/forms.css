@@ -1,5 +1,5 @@
 /* ========================================
-   Forms - FBR Shot
+   Forms - FBR Shot Dark Luxury
    ======================================== */
 
 .form-group {
@@ -8,9 +8,12 @@
 
 .form-label {
   display: block;
-  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-text-primary);
+  color: var(--color-gray-600);
 }
 
 .form-label-required::after {
@@ -22,12 +25,12 @@
 .form-textarea,
 .form-select {
   width: 100%;
-  padding: 0.875rem 1rem;
+  padding: 0.875rem 1.25rem;
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
-  color: var(--color-text-primary);
-  background-color: var(--color-white);
-  border: 2px solid var(--color-gray-300);
+  color: var(--color-white);
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
 }
@@ -37,12 +40,13 @@
 .form-select:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(255, 171, 65, 0.1);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+  background-color: var(--color-surface-3);
 }
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: var(--color-gray-500);
+  color: var(--color-gray-400);
 }
 
 .form-textarea {
@@ -50,41 +54,30 @@
   resize: vertical;
 }
 
-/* Form States */
 .form-input.is-valid,
 .form-textarea.is-valid,
 .form-select.is-valid {
-  border-color: #22c55e;
+  border-color: #4ade80;
 }
 
 .form-input.is-invalid,
 .form-textarea.is-invalid,
 .form-select.is-invalid {
-  border-color: #ef4444;
+  border-color: #f87171;
 }
 
-/* Form Messages */
 .form-message {
   margin-top: var(--spacing-sm);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-xs);
 }
 
-.form-message-error {
-  color: #ef4444;
-}
+.form-message-error { color: #f87171; }
+.form-message-success { color: #4ade80; }
+.form-message-info { color: var(--color-text-secondary); }
 
-.form-message-success {
-  color: #22c55e;
-}
-
-.form-message-info {
-  color: var(--color-text-secondary);
-}
-
-/* Checkbox & Radio */
 .form-checkbox,
 .form-radio {
   display: flex;
@@ -96,21 +89,20 @@
 .form-checkbox input[type="checkbox"],
 .form-radio input[type="radio"] {
   margin-top: 0.25rem;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.1rem;
+  height: 1.1rem;
   cursor: pointer;
   accent-color: var(--color-primary);
 }
 
 .form-checkbox-label,
 .form-radio-label {
-  font-size: var(--font-size-base);
-  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
   cursor: pointer;
   line-height: var(--line-height-normal);
 }
 
-/* Form Row */
 .form-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -118,12 +110,9 @@
 }
 
 @media (max-width: 768px) {
-  .form-row {
-    grid-template-columns: 1fr;
-  }
+  .form-row { grid-template-columns: 1fr; }
 }
 
-/* Form Actions */
 .form-actions {
   display: flex;
   gap: var(--spacing-md);
@@ -132,54 +121,27 @@
 }
 
 @media (max-width: 768px) {
-  .form-actions {
-    flex-direction: column;
-  }
-
-  .form-actions .btn {
-    width: 100%;
-  }
+  .form-actions { flex-direction: column; }
+  .form-actions .btn { width: 100%; }
 }
 
-/* Select Styling */
 .form-select {
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23333333' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23C9A96E' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
   padding-right: 3rem;
   cursor: pointer;
 }
 
-/* Disabled State */
+.form-select option {
+  background: var(--color-surface-2);
+  color: var(--color-white);
+}
+
 .form-input:disabled,
 .form-textarea:disabled,
 .form-select:disabled {
-  background-color: var(--color-gray-100);
+  opacity: 0.4;
   cursor: not-allowed;
-  opacity: 0.6;
-}
-
-/* Input Groups */
-.form-input-group {
-  display: flex;
-  align-items: stretch;
-}
-
-.form-input-group .form-input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.form-input-group-append {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  background: var(--color-gray-100);
-  border: 2px solid var(--color-gray-300);
-  border-left: none;
-  border-top-right-radius: var(--radius-md);
-  border-bottom-right-radius: var(--radius-md);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
 }
