@@ -6,6 +6,7 @@ Allow: /
 
 # Pages principales - crawl prioritaire
 Allow: /index.html
+Allow: /links.html
 
 # Pages légales - crawl autorisé mais pas prioritaire
 Allow: /mentions-legales.html

@@ -7,9 +7,17 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://www.fbrshot.fr/</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Page de liens (Instagram / contact) -->
+  <url>
+    <loc>https://www.fbrshot.fr/links.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Mentions légales -->
@@ -34,14 +42,6 @@
     <lastmod>2026-02-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <!-- Page de remerciement (noindex mais crawlable) -->
-  <url>
-    <loc>https://www.fbrshot.fr/merci.html</loc>
-    <lastmod>2026-02-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
   </url>
 
 </urlset>
