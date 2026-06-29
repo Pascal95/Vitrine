@@ -3,11 +3,11 @@
    ======================================== */
 
 :root {
-  /* Colors - Gold accent */
-  --color-primary: #C9A96E;
-  --color-primary-dark: #A8844A;
-  --color-primary-light: #E2C48A;
-  --color-primary-glow: rgba(201, 169, 110, 0.15);
+  /* Colors - Brand accent (Instagram: orange-red #fb543a + golden #f2ab52) */
+  --color-primary: #fb543a;
+  --color-primary-dark: #d83a22;
+  --color-primary-light: #f2ab52;
+  --color-primary-glow: rgba(251, 84, 58, 0.15);
 
   /* Colors - Surfaces */
   --color-bg: #080808;
@@ -15,7 +15,7 @@
   --color-surface-2: #1A1A1A;
   --color-surface-3: #222222;
   --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-hover: rgba(201, 169, 110, 0.3);
+  --color-border-hover: rgba(251, 84, 58, 0.3);
 
   /* Colors - Neutral (kept for legacy compat) */
   --color-white: #F5F5F0;
@@ -87,7 +87,7 @@
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
   --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.6);
-  --shadow-gold: 0 0 40px rgba(201, 169, 110, 0.2);
+  --shadow-gold: 0 0 40px rgba(251, 84, 58, 0.2);
 
   /* Transitions */
   --transition-fast: 150ms ease-in-out;

@@ -161,7 +161,7 @@ export function initForms() {
     submitButton.classList.add('is-loading');
     submitButton.textContent = 'Envoi en cours...';
 
-    // Submit the form to FormSubmit.co
+    // Submit the form to Formspree
     // The form will redirect to the thank you page (_next parameter in the form)
     contactForm.submit();
   }

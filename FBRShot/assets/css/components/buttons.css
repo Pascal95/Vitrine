@@ -27,17 +27,17 @@
   outline-offset: 3px;
 }
 
-/* Primary — gold filled */
+/* Primary — brand gradient filled */
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 50%, var(--color-primary-dark) 100%);
-  color: #0A0A0A;
-  box-shadow: 0 4px 24px rgba(201, 169, 110, 0.3);
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 55%, var(--color-primary-dark) 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 24px rgba(251, 84, 58, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(201, 169, 110, 0.5);
-  color: #0A0A0A;
+  box-shadow: 0 8px 32px rgba(251, 84, 58, 0.5);
+  color: #FFFFFF;
 }
 
 .btn-primary:active {

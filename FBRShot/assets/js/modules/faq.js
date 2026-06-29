@@ -65,7 +65,7 @@ export function initFAQ() {
           class="faq-question"
           aria-expanded="false"
           aria-controls="faq-answer-${index}"
-          style="width: 100%; text-align: left; padding: var(--spacing-lg); background: var(--color-white); border: 2px solid var(--color-gray-300); border-radius: var(--radius-md); font-weight: var(--font-weight-semibold); font-size: var(--font-size-lg); cursor: pointer; transition: all var(--transition-fast); display: flex; justify-content: space-between; align-items: center;"
+          style="width: 100%; text-align: left; padding: var(--spacing-lg); background: var(--color-surface); color: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); font-family: var(--font-heading); font-weight: var(--font-weight-semibold); font-size: var(--font-size-lg); cursor: pointer; transition: all var(--transition-fast); display: flex; justify-content: space-between; align-items: center;"
         >
           <span>${item.question}</span>
           <span class="faq-icon" style="transition: transform var(--transition-normal); font-size: var(--font-size-2xl); color: var(--color-primary);">+</span>
@@ -75,7 +75,7 @@ export function initFAQ() {
           id="faq-answer-${index}"
           style="max-height: 0; overflow: hidden; transition: max-height var(--transition-normal);"
         >
-          <div style="padding: var(--spacing-lg); color: var(--color-text-secondary); line-height: var(--line-height-relaxed); border: 2px solid var(--color-gray-300); border-top: none; border-radius: 0 0 var(--radius-md) var(--radius-md);">
+          <div style="padding: var(--spacing-lg); color: var(--color-text-secondary); line-height: var(--line-height-relaxed); background: var(--color-surface); border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 var(--radius-md) var(--radius-md);">
             ${item.answer}
           </div>
         </div>
