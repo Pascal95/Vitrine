@@ -9,8 +9,8 @@ export function initFAQ() {
       answer: 'La location est simple : vous choisissez votre formule, nous livrons et installons le photobooth à votre événement. Nous configurons tout et nous occupons de la récupération après l\'événement.'
     },
     {
-      question: 'Quelle est la durée minimale de location ?',
-      answer: 'Notre formule Classic propose une location de 6 heures minimum. Pour des durées plus longues ou des besoins spécifiques, consultez nos formules Premium et Corporate.'
+      question: 'Quelle est la durée de présence du photobooth ?',
+      answer: 'Nos formules vont de 2 heures (Essentiel) à 4 heures (Premium), la formule Classic offrant 3 heures, le meilleur équilibre entre durée et budget. Besoin de plus de temps ? Chaque heure supplémentaire est à 70€.'
     },
     {
       question: 'Le photobooth nécessite-t-il une connexion Internet ?',
@@ -22,7 +22,7 @@ export function initFAQ() {
     },
     {
       question: 'Puis-je personnaliser les photos avec mon logo ?',
-      answer: 'Absolument ! Toutes nos formules incluent la personnalisation : ajout de votre logo, texte personnalisé, choix des filtres et des cadres. L\'option Branding (+50€) offre une personnalisation avancée.'
+      answer: 'Absolument ! Toutes nos formules incluent un cadre photo personnalisé : ajout de votre logo, texte personnalisé et choix du design pour des souvenirs à votre image.'
     },
     {
       question: 'Quelle est la zone géographique couverte ?',

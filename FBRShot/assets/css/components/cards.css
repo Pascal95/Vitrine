@@ -109,6 +109,9 @@
 
 /* ── Pricing Card ── */
 .pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   text-align: center;
   padding: var(--spacing-2xl) var(--spacing-xl);
   position: relative;
@@ -126,7 +129,7 @@
 }
 
 .pricing-card.is-featured::before {
-  content: 'Recommandé';
+  content: 'La plus choisie';
   position: absolute;
   top: 1rem;
   left: 50%;
@@ -164,24 +167,27 @@
   line-height: 1.4;
 }
 
-.pricing-card-duration {
+.pricing-card-tagline {
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-md);
   font-size: var(--font-size-sm);
-  margin-top: var(--spacing-xs);
+  line-height: var(--line-height-normal);
+  min-height: 2.6em;
 }
 
 .pricing-card-features {
   list-style: none;
   margin-bottom: var(--spacing-xl);
   text-align: left;
+  flex: 1 0 auto;
 }
 
 .pricing-card-feature {
   padding: var(--spacing-sm) 0;
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
   font-size: var(--font-size-sm);
   color: var(--color-gray-600);
@@ -191,13 +197,83 @@
   border-bottom: none;
 }
 
-.pricing-card-feature::before {
-  content: '—';
-  color: var(--color-primary);
-  font-weight: var(--font-weight-bold);
+.pricing-card-feature-icon {
   flex-shrink: 0;
-  font-size: var(--font-size-xs);
-  margin-top: 0.15em;
+  color: var(--color-primary);
+  display: inline-flex;
+}
+
+.pricing-card-feature-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.pricing-card-cta {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ── Pricing Options ── */
+.pricing-options {
+  max-width: 640px;
+  margin: var(--spacing-3xl) auto 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl) var(--spacing-2xl);
+}
+
+.pricing-options-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: 0.04em;
+}
+
+.pricing-options-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pricing-option:last-child {
+  border-bottom: none;
+}
+
+.pricing-option-info {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-gray-600);
+  font-size: var(--font-size-base);
+}
+
+.pricing-option-icon {
+  display: inline-flex;
+  color: var(--color-primary);
+}
+
+.pricing-option-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.pricing-option-price {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* ── Testimonial Card ── */

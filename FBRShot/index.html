@@ -300,7 +300,7 @@
                   <strong style="color: var(--color-white);">Couverture complète</strong> de votre événement
                 </li>
                 <li style="padding: var(--spacing-md); background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); color: var(--color-gray-600);">
-                  <strong style="color: var(--color-white);">300 à 500 photos</strong> haute résolution retouchées
+                  <strong style="color: var(--color-white);">100 à 150 photos</strong> haute résolution retouchées
                 </li>
                 <li style="padding: var(--spacing-md); background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); color: var(--color-gray-600);">
                   <strong style="color: var(--color-white);">Galerie privée en ligne</strong> pour téléchargement
@@ -397,65 +397,36 @@
     <section class="section" id="tarifs">
       <div class="container">
         <div class="section-header scroll-reveal">
-          <span class="section-subtitle">Nos Tarifs</span>
-          <h2 class="section-title">Transparent, sans surprise</h2>
-          <p class="section-description">Toutes les formules incluent livraison, installation, récupération et support technique.</p>
+          <span class="section-subtitle">Nos Offres</span>
+          <h2 class="section-title">Des formules claires, sans surprise</h2>
+          <p class="section-description">Chaque formule inclut les photos numériques et impressions illimitées, les accessoires, le cadre personnalisé, la galerie en ligne, ainsi que l'installation et le démontage.</p>
           <div class="section-divider"></div>
-        </div>
-
-        <div class="text-center" style="margin-bottom: var(--spacing-2xl);">
-          <div class="pricing-toggle scroll-reveal">
-            <button class="btn btn-sm is-active" id="toggleParticulier">Particulier</button>
-            <button class="btn btn-sm btn-ghost" id="toggleEntreprise">Entreprise</button>
-          </div>
         </div>
 
         <div class="grid grid-3" id="pricingGrid"></div>
 
-        <!-- Calculator -->
-        <div class="card scroll-reveal" style="max-width: 640px; margin: var(--spacing-3xl) auto 0;">
-          <div class="card-body">
-            <h3 style="font-family: var(--font-heading); margin-bottom: var(--spacing-sm); color: var(--color-white);">Calculez votre tarif</h3>
-            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xl);">Sélectionnez votre formule de base et ajoutez les options souhaitées.</p>
-            <form id="pricingCalculator">
-              <div class="form-group">
-                <label class="form-label">Formule de base</label>
-                <select class="form-select" id="baseFormula" required>
-                  <option value="300">Essentiel — 300€ (3h)</option>
-                  <option value="500">Classic — 500€ (6h)</option>
-                  <option value="800">Premium — 800€ (12h)</option>
-                  <option value="1200">Corporate 1 jour — 1 200€</option>
-                  <option value="1900">Corporate 2 jours — 1 900€</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Options supplémentaires</label>
-                <div style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
-                  <div class="form-checkbox">
-                    <input type="checkbox" id="optionDigital" value="50">
-                    <label for="optionDigital" class="form-checkbox-label">Liens digitaux personnalisés (+50€)</label>
-                  </div>
-                  <div class="form-checkbox">
-                    <input type="checkbox" id="optionFrame" value="70">
-                    <label for="optionFrame" class="form-checkbox-label">Cadre impression personnalisé (+70€)</label>
-                  </div>
-                  <div class="form-checkbox">
-                    <input type="checkbox" id="optionBranding" value="50">
-                    <label for="optionBranding" class="form-checkbox-label">Branding événementiel (+50€)</label>
-                  </div>
-                  <div class="form-checkbox">
-                    <input type="checkbox" id="optionExtraPhotos" value="50">
-                    <label for="optionExtraPhotos" class="form-checkbox-label">Tirages supplémentaires (+50€)</label>
-                  </div>
-                </div>
-              </div>
-
-              <div style="background: var(--color-surface-2); border: 1px solid var(--color-border-hover); padding: var(--spacing-xl); border-radius: var(--radius-lg); text-align: center;">
-                <p style="font-size: var(--font-size-xs); letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: var(--spacing-sm);">Estimation</p>
-                <p style="font-size: var(--font-size-5xl); font-weight: var(--font-weight-bold); color: var(--color-primary); font-family: var(--font-heading); line-height: 1; margin-bottom: 0;" id="totalPrice">300€</p>
-              </div>
-            </form>
+        <!-- Options -->
+        <div class="pricing-options scroll-reveal">
+          <h3 class="pricing-options-title">Options</h3>
+          <div class="pricing-options-list">
+            <div class="pricing-option">
+              <span class="pricing-option-info">
+                <span class="pricing-option-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+                </span>
+                <span class="pricing-option-name">Heure supplémentaire</span>
+              </span>
+              <span class="pricing-option-price">70€</span>
+            </div>
+            <div class="pricing-option">
+              <span class="pricing-option-info">
+                <span class="pricing-option-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+                </span>
+                <span class="pricing-option-name">Déplacement hors zone</span>
+              </span>
+              <span class="pricing-option-price">Sur devis</span>
+            </div>
           </div>
         </div>
       </div>
